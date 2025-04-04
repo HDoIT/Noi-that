@@ -52,6 +52,10 @@
             .order-now-btn {
                 right: 50%;
             }
+            .btn-2{
+                right: 0;
+                top: 30px;
+            }
 
             .ttm-header-style-01 {
                 position: fixed;
@@ -507,7 +511,7 @@
         .quick-popup-icon {
             width: 80px;
             height: 80px;
-            background: #4CAF50;
+            background: #cda274;
             border-radius: 50%;
             margin: 0 auto 20px;
             display: flex;
@@ -537,7 +541,7 @@
 
         .quick-popup-content h3 {
             margin: 0 0 10px;
-            color: #4CAF50;
+            color: #cda274;
             font-size: 24px;
         }
 
@@ -548,7 +552,7 @@
         }
 
         .quick-popup-close {
-            background: #4CAF50;
+            background: #cda274;
             color: white;
             border: none;
             padding: 10px 25px;
@@ -559,7 +563,7 @@
         }
 
         .quick-popup-close:hover {
-            background: #3e8e41;
+            background: #cda274;
             transform: translateY(-2px);
         }
 
@@ -613,7 +617,7 @@
         }
 
         .thumbnail-item.active {
-            border-color: #2a7d2e;
+            border-color: #cda274;
         }
 
         .thumbnail-item img {
@@ -793,12 +797,12 @@
             opacity: 0.9;
             transition: all 0.3s;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            color: #2a7d2e;
+            color: #cda274;
         }
 
         .combo-thumbnail-slider .slider-nav:hover {
             opacity: 1;
-            background: #2a7d2e;
+            background: #cda274;
             color: white;
             transform: translateY(-50%) scale(1.1);
         }
@@ -845,7 +849,7 @@
         }
 
         .color-thumb.active {
-            border-color: #2a7d2e;
+            border-color: #cda274;
             transform: scale(1.1);
         }
 
@@ -1027,6 +1031,53 @@
         section{
         }
     </style>
+
+<style>
+    /* Style cho modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        overflow: auto;
+    }
+    
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: #cda274;
+    }
+    
+    .zoomable-image {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .zoomable-image:hover {
+        opacity: 0.7;
+    }
+</style>
 </head>
 
 <body>
@@ -1453,10 +1504,9 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-5 col-md-12">
                         <!-- ttm_single_image-wrapper -->
-                        <div
-                            class="ttm_single_image-wrapper text-center p-15 border_1 d-inline-block mr_50 res-991-mr-0">
-                            <img width="520" height="590" class="img-fluid" src="images/single-img-01.jpg"
-                                alt="single_01">
+                        <div class="ttm_single_image-wrapper text-center p-15 border_1 d-inline-block mr_50 res-991-mr-0">
+                            <img width="520" height="590" class="img-fluid zoomable-image" src="images/single-img-01.jpg" 
+                                 alt="single_01" onclick="openModal('images/single-img-01.jpg')">
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-12">
@@ -1469,10 +1519,8 @@
                                 </div>
                             </div><!-- section title end -->
                             <div class="pb-5 res-991-pb-30">
-                                <p>Perfect Decor Plast mang đến giải pháp nội thất nhựa cao cấp với độ bền vượt trội 20
-                                    năm,
-                                    kết hợp thiết kế thông minh và tính năng ưu việt. Sản phẩm của chúng tôi không chỉ
-                                    đẹp
+                                <p>Perfect Decor Plast mang đến giải pháp nội thất nhựa cao cấp với độ bền vượt trội 20 năm,
+                                    kết hợp thiết kế thông minh và tính năng ưu việt. Sản phẩm của chúng tôi không chỉ đẹp
                                     về thẩm mỹ mà còn đảm bảo an toàn sức khỏe cho gia đình bạn.</p>
                             </div>
                             <div class="ttm-tabs ttm-tab-style-01">
@@ -1484,15 +1532,17 @@
                                 <div class="content-tab">
                                     <!-- content-inner -->
                                     <div class="content-inner active">
-                                        <p><img width="190" height="199" class="alignleft img-fluid"
-                                                src="images/tab_img2.jpg" alt="service-01">Giường ngủ 1m6 x 2m với khung
-                                            nhựa
-                                            cao cấp siêu bền, chịu tải lên đến 420kg. Thiết kế êm ái với hệ thống
+                                        <p>
+                                            <div style="display: flex;">
+                                                <img width="190" height="199" class="alignleft img-fluid zoomable-image" 
+                                               src="images/tab_img2.jpg" alt="service-01" onclick="openModal('images/tab_img2.jpg')">
+                                            </div>
+                                            Giường ngủ 1m6 x 2m với khung
+                                            nhựa cao cấp siêu bền, chịu tải lên đến 420kg. Thiết kế êm ái với hệ thống
                                             thanh đỡ chắc chắn, mang đến giấc ngủ ngon trọn vẹn.</p>
                                         <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
                                             <li><i class="flaticon-work-done ttm-textcolor-skincolor"></i>
-                                                <span class="ttm-list-li-content">Khung nhựa cao cấp chịu lực
-                                                    420kg</span>
+                                                <span class="ttm-list-li-content">Khung nhựa cao cấp chịu lực 420kg</span>
                                             </li>
                                             <li><i class="flaticon-work-done ttm-textcolor-skincolor"></i>
                                                 <span class="ttm-list-li-content">Kích thước 1m6 x 2m tiêu chuẩn</span>
@@ -1505,16 +1555,13 @@
                                     <!-- content-inner -->
                                     <div class="content-inner">
                                         <p>
-                                        <div>
-
-                                            <img width="190" height="199" class="alignleft img-fluid"
-                                                src="images/tab_img1.jpg" alt="service-02">
-                                            <img width="190" height="199" class="alignleft img-fluid"
-                                                src="images/products/product-3.jpg" alt="service-03">
+                                        <div style=" display: flex;">
+                                            <img width="190" height="199" class="alignleft img-fluid zoomable-image" 
+                                                 src="images/tab_img1.jpg" alt="service-02" onclick="openModal('images/tab_img1.jpg')">
+                                            <img width="190" height="199" class="alignleft img-fluid zoomable-image" 
+                                                 src="images/products/product-3.jpg" alt="service-03" onclick="openModal('images/products/product-3.jpg')">
                                         </div>
-                                        Tủ quần áo 1m65 x 1m9 với
-                                        thiết kế
-                                        thông minh 4 hộc kéo và 4 cánh mở. Không gian lưu trữ rộng rãi, hệ thống
+                                        Tủ quần áo 1m65 x 1m9 với thiết kế thông minh 4 hộc kéo và 4 cánh mở. Không gian lưu trữ rộng rãi, hệ thống
                                         treo đồ tiện lợi, giúp bảo quản quần áo luôn phẳng phiu.</p>
                                         <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
                                             <li><i class="flaticon-work-done ttm-textcolor-skincolor"></i>
@@ -1530,9 +1577,12 @@
                                     </div><!-- content-inner end-->
                                     <!-- content-inner -->
                                     <div class="content-inner">
-                                        <p><img width="190" height="199" class="alignleft img-fluid"
-                                                src="images/tab_img3.jpg" alt="service-03">Bàn trang điểm 1m với mặt
-                                            kính LED
+                                        <p>
+                                            <div style="display: flex;">
+                                                <img width="190" height="199" class="alignleft img-fluid zoomable-image" 
+                                               src="images/tab_img3.jpg" alt="service-03" onclick="openModal('images/tab_img3.jpg')">
+                                            </div>
+                                            Bàn trang điểm 1m với mặt kính LED
                                             cảm ứng đa điểm, 4 hộc kéo tiện lợi. Hệ thống đèn chiếu sáng chuyên nghiệp
                                             giúp bạn làm đẹp dễ dàng mọi lúc.</p>
                                         <ul class="ttm-list ttm-list-style-icon ttm-list-icon-color-skincolor">
@@ -1802,7 +1852,7 @@
                 <!-- Order Button -->
                 <div class="row mt-50">
                     <div class="col-lg-12 text-center">
-                        <a href="#order" class="order-now-btn">Đặt Hàng Ngay - Ưu Đãi Có Hạn</a>
+                        <a href="#order" class="order-now-btn btn-2">Đặt Hàng Ngay - Ưu Đãi Có Hạn</a>
                     </div>
                 </div>
             </div>
@@ -2775,7 +2825,31 @@
             </div>
         </a>
     </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
     <!-- Javascript -->
+    <script>
+        // Mở modal và hiển thị ảnh được click
+        function openModal(imgSrc) {
+            document.getElementById('modalImage').src = imgSrc;
+            document.getElementById('imageModal').style.display = "block";
+        }
+        
+        // Đóng modal
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+        
+        // Đóng modal khi nhấn phím ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Xử lý slider ảnh nhỏ cho combo
