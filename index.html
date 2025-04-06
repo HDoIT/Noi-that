@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="HTML5 Template">
     <meta name="description" content="Perfect Decor - Plastic">
-    <meta name="keywords"
-        content="Perfect Decor - Plastic">
+    <meta name="keywords" content="Perfect Decor - Plastic">
     <meta name="author" content="">
     <meta name="viewport" content=" width=device-width, initial-scale=1, maximum-scale=2">
     <title>Perfect Decor - Plastic</title>
@@ -35,6 +34,9 @@
     <link rel="stylesheet" type="text/css" href="css/megamenu.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel='stylesheet' id='rs-plugin-settings-css' href="revolution/css/rs6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         #logo-img {
             height: 100px;
@@ -49,18 +51,18 @@
 
             }
 
-            #slider-1-slide-3-layer-9{
+            #slider-1-slide-3-layer-9 {
                 font-size: 20px !important;
                 transform: translate(25px, 0px) !important;
 
             }
 
-            #slider-1-slide-3-layer-4{
-                font-size:27px !important;
+            #slider-1-slide-3-layer-4 {
+                font-size: 27px !important;
                 /* transform: translate(54px, 0px) !important; */
             }
 
-            #rev_slider_1_1{
+            #rev_slider_1_1 {
                 height: 246px !important;
             }
 
@@ -337,7 +339,7 @@
         .quick-products-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 4px;
         }
 
         .quick-product-item {
@@ -419,7 +421,7 @@
         }
 
         .quick-product-detail {
-            padding: 10px;
+            padding: 5px;
         }
 
         .quick-product-detail h4 {
@@ -663,11 +665,12 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 25px;
+            width: 5px !important;
             height: 25px;
-            background: white;
+            background: transparent;
             border: 1px solid #ddd;
-            border-radius: 50%;
+            padding: 0 10px;
+            /* border-radius: 50%; */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -682,11 +685,11 @@
         }
 
         .slider-nav.prev {
-            left: -10px;
+            left: -20px;
         }
 
         .slider-nav.next {
-            right: -10px;
+            right: -20px;
         }
 
         .slider-nav i {
@@ -1112,6 +1115,24 @@
             opacity: 0.7;
         }
     </style>
+
+    <style>
+        .product-thumbnail .slider-nav.prev {
+            left: 100px;
+            background: #cda274;
+            position: relative;
+            padding: 15px;
+            bottom: 20px;
+        }
+
+        .product-thumbnail .slider-nav.next{
+            left: 250px;
+            background: #cda274;
+            position: relative;
+            padding: 15px;
+            bottom: 52px;
+        }
+    </style>
 </head>
 
 <body>
@@ -1192,8 +1213,8 @@
                         <rs-slide data-key="rs-1" data-title="Slide" data-thumb="images/slides/slider-mainbg-001.jpg"
                             data-anim="ei:d;eo:d;s:d;r:0;t:grayscalecross;sl:d;">
 
-                            <img id="image-banner" src="images/slides/slider-mainbg-001.jpg" title="slider-bg001" width="1741"
-                                height="700" class="rev-slidebg" data-no-retina>
+                            <img id="image-banner" src="images/slides/slider-mainbg-001.jpg" title="slider-bg001"
+                                width="1741" height="700" class="rev-slidebg" data-no-retina>
 
                             <a id="slider-1-slide-9-layer-7" class="rs-layer ttm-btn" href="tel:0329448888"
                                 target="_self" rel="nofollow" data-type="text" data-color="#3a1f02" data-rsp_ch="on"
@@ -1460,8 +1481,10 @@
                             <img src="images/slides/slider-mainbg-001.jpg" title="slider-mainbg-003" width="1741"
                                 height="700" class="rev-slidebg" data-no-retina>
 
-                            <a id="slider-1-slide-3-layer-1" class="rs-layer" href="https://www.facebook.com/profile.php?id=61574171462457" target="_self" data-type="text"
-                                data-rsp_ch="on" data-xy="x:c;xo:49px,49px,39px,-327px;y:m;yo:-112px,-112px,59px,8px;"
+                            <a id="slider-1-slide-3-layer-1" class="rs-layer"
+                                href="https://www.facebook.com/profile.php?id=61574171462457" target="_self"
+                                data-type="text" data-rsp_ch="on"
+                                data-xy="x:c;xo:49px,49px,39px,-327px;y:m;yo:-112px,-112px,59px,8px;"
                                 data-text="w:normal;s:20,20,16,9;l:28,28,16,9;" data-vbility="t,t,t,f"
                                 data-frame_0="sX:0.9;sY:0.9;" data-frame_1="st:410;sp:400;sR:410;"
                                 data-frame_999="o:0;st:w;sR:8190;" data-frame_hover="c:#cda274;" style="z-index:12;"><i
@@ -1488,8 +1511,8 @@
                                 đãi đặc biệt cho Miền Tây
                             </rs-layer>
 
-                            <a id="slider-1-slide31-layer-5" class="rs-layer ttm-btn" href="#order"
-                                target="_self" rel="nofollow" data-type="text" data-color="#cda274" data-rsp_ch="on"
+                            <a id="slider-1-slide31-layer-5" class="rs-layer ttm-btn" href="#order" target="_self"
+                                rel="nofollow" data-type="text" data-color="#cda274" data-rsp_ch="on"
                                 data-xy="x:c;y:m;yo:185px,185px,107px,48px;"
                                 data-text="w:normal;s:15,15,14,14;l:26,26,15,15;fw:700;a:center;"
                                 data-padding="t:7,7,7,7;r:30,30,30,30;b:8,8,8,8;l:30,30,30,30;"
@@ -1500,7 +1523,7 @@
                                 style="z-index:19;text-transform:capitalize;">Mua ngay
                             </a>
 
-                            
+
 
                             <rs-layer id="slider-1-slide-3-layer-9" data-type="text" data-rsp_ch="on"
                                 data-xy="x:c;y:m;yo:11px,11px,-71px,-60px;"
@@ -1672,17 +1695,7 @@
                         <div class="plastic-product-card">
                             <div class="product-thumbnail">
                                 <img src="images/products/bed-white.jpg" alt="Giường nhựa màu trắng"
-                                    class="img-fluid main-image" data-color="white">
-                                <div class="color-images">
-                                    <img src="images/products/bed-gray.jpg" alt="Giường nhựa màu xám" data-color="gray"
-                                        class="hidden">
-                                    <img src="images/products/bed-beige.jpg" alt="Giường nhựa màu be" data-color="beige"
-                                        class="hidden">
-                                    <img src="images/products/bed-brown.jpg" alt="Giường nhựa màu nâu"
-                                        data-color="brown" class="hidden">
-                                    <img src="images/products/bed-black.jpg" alt="Giường nhựa màu nâu"
-                                        data-color="brown" class="hidden">
-                                </div>
+                                    class="img-fluid main-image zoomable-image " data-color="white">
                             </div>
                             <div class="product-info">
                                 <span class="product-category">Giường</span>
@@ -1695,7 +1708,7 @@
                                 <div class="thumbnail-slider">
                                     <div class="thumbnails-container">
                                         <div class="thumbnail-item active" data-image="images/products/bed-white.jpg">
-                                            <img src="images/products/bed-white.jpg" alt="Giường màu trắng">
+                                            <img src="images/products/bed-white.jpg" alt="Giường màu trắng đen">
                                         </div>
                                         <div class="thumbnail-item" data-image="images/products/bed-gray.jpg">
                                             <img src="images/products/bed-gray.jpg" alt="Giường màu xám">
@@ -1709,9 +1722,12 @@
                                         <div class="thumbnail-item" data-image="images/products/bed-black.jpg">
                                             <img src="images/products/bed-black.jpg" alt="Giường màu nâu">
                                         </div>
+                                        <div class="thumbnail-item" data-image="images/products/bed-white-2.jpg">
+                                            <img src="images/products/bed-white-2.jpg" alt="Giường màu trắng">
+                                        </div>
                                     </div>
-                                    <!-- <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
-                                    <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button> -->
+                                    <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
                                 </div>
                                 <div class="product-price">
                                     <span class="current-price">5.990.000đ</span>
@@ -1725,15 +1741,17 @@
                         <div class="plastic-product-card">
                             <div class="product-thumbnail">
                                 <img src="images/products/wardrobe-oak.jpg" alt="Tủ quần áo vân gỗ sồi"
-                                    class="img-fluid main-image" data-color="oak">
-                                <div class="color-images">
-                                    <img src="images/products/wardrobe-walnut.jpg" alt="Tủ quần áo vân gỗ óc chó"
-                                        data-color="walnut" class="hidden">
-                                    <!-- <img src="images/products/wardrobe-white.jpg" alt="Tủ quần áo màu trắng"
-                                        data-color="white" class="hidden"> -->
-                                    <img src="images/products/wardrobe-gray.jpg" alt="Tủ quần áo màu xám"
-                                        data-color="gray" class="hidden">
+                                    class="img-fluid main-image zoomable-image active" data-color="oak">
+                                <img src="images/products/wardrobe-walnut.jpg" alt="Tủ quần áo vân gỗ óc chó"
+                                    class="img-fluid main-image zoomable-image" data-color="walnut"
+                                    style="display:none;">
+
+                                <!-- Nút điều hướng -->
+                                <div class="slider-nav-container">
+                                    <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
                                 </div>
+
                             </div>
                             <div class="product-info">
                                 <span class="product-category">Tủ Quần Áo</span>
@@ -1752,16 +1770,23 @@
                                         <div class="thumbnail-item" data-image="images/products/wardrobe-walnut.jpg">
                                             <img src="images/products/wardrobe-walnut.jpg" alt="Tủ vân gỗ óc chó">
                                         </div>
-                                        <!-- <div class="thumbnail-item" data-image="images/products/wardrobe-white.jpg">
-                                            <img src="images/products/wardrobe-white.jpg" alt="Tủ màu trắng">
-                                        </div> -->
+                                        <div class="thumbnail-item" data-image="images/products/wardrobe-gray-2.jpg">
+                                            <img src="images/products/wardrobe-gray-2.jpg" alt="Tủ màu xám có vân">
+                                        </div>
                                         <div class="thumbnail-item" data-image="images/products/wardrobe-gray.jpg">
                                             <img src="images/products/wardrobe-gray.jpg" alt="Tủ màu xám">
                                         </div>
+                                        <div class="thumbnail-item"
+                                            data-image="images/products/wardrobe-white-black.jpg">
+                                            <img src="images/products/wardrobe-white-black.jpg" alt="Tủ màu trắng đen">
+                                        </div>
+                                        <div class="thumbnail-item" data-image="images/products/wardrobe-white.jpg">
+                                            <img src="images/products/wardrobe-white.jpg" alt="Tủ màu trắng đen">
+                                        </div>
                                     </div>
-                                    <!-- <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
                                     <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
-                                 -->
+
                                 </div>
                                 <div class="product-price">
                                     <span class="current-price">4.990.000đ</span>
@@ -1775,15 +1800,7 @@
                         <div class="plastic-product-card">
                             <div class="product-thumbnail">
                                 <img src="images/products/dressing-white.jpg" alt="Bàn trang điểm màu hồng"
-                                    class="img-fluid main-image" data-color="pink">
-                                <div class="color-images">
-                                    <!-- <img src="images/products/dressing-white.jpg" alt="Bàn trang điểm màu trắng"
-                                        data-color="white" class="hidden"> -->
-                                    <img src="images/products/dressing-gold.jpg" alt="Bàn trang điểm màu vàng gold"
-                                        data-color="gold" class="hidden">
-                                    <img src="images/products/dressing-oak.jpg" alt="Bàn trang điểm màu tím"
-                                        data-color="purple" class="hidden">
-                                </div>
+                                    class="img-fluid main-image zoomable-image" data-color="pink">
                             </div>
                             <div class="product-info">
                                 <span class="product-category">Bàn Trang Điểm</span>
@@ -1797,21 +1814,31 @@
                                     <div class="thumbnails-container">
                                         <div class="thumbnail-item active"
                                             data-image="images/products/dressing-white.jpg">
-                                            <img src="images/products/dressing-white.jpg" alt="Bàn trang điểm hồng">
-                                        </div>
-                                        <!-- <div class="thumbnail-item" data-image="images/products/dressing-white.jpg">
                                             <img src="images/products/dressing-white.jpg" alt="Bàn trang điểm trắng">
-                                        </div> -->
+                                        </div>
+                                        <div class="thumbnail-item" data-image="images/products/dressing-white-1.jpg">
+                                            <img src="images/products/dressing-white-1.jpg"
+                                                alt="Bàn trang điểm trắng đen">
+                                        </div>
                                         <div class="thumbnail-item" data-image="images/products/dressing-gold.jpg">
-                                            <img src="images/products/dressing-gold.jpg" alt="Bàn trang điểm vàng gold">
+                                            <img src="images/products/dressing-gold.jpg"
+                                                alt="Bàn trang điểm vân gỗ sồi">
                                         </div>
                                         <div class="thumbnail-item" data-image="images/products/dressing-oak.jpg">
-                                            <img src="images/products/dressing-oak.jpg" alt="Bàn trang điểm tím">
+                                            <img src="images/products/dressing-oak.jpg"
+                                                alt="Bàn trang điểm vân gỗ óc chó">
+                                        </div>
+                                        <div class="thumbnail-item" data-image="images/products/dressing-grey.jpg">
+                                            <img src="images/products/dressing-grey.jpg" alt="Bàn trang xám">
+                                        </div>
+                                        <div class="thumbnail-item"
+                                            data-image="images/products/dressing-grey black.jpg">
+                                            <img src="images/products/dressing-grey black.jpg" alt="Bàn trang điểm tím">
                                         </div>
                                     </div>
-                                    <!-- <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                    <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
                                     <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
-                                 -->
+
                                 </div>
                                 <div class="product-price">
                                     <span class="current-price">3.990.000đ</span>
@@ -1828,13 +1855,13 @@
                                 <div class="col-lg-6">
                                     <div class="combo-image">
                                         <img src="images/products/combo-default.jpg" alt="Combo Phòng Ngủ Nhựa"
-                                            class="img-fluid combo-main-image">
+                                            class="img-fluid combo-main-image zoomable-image">
                                         <div class="combo-thumbnail-slider">
-                                            <!-- <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button> -->
+                                            <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
                                             <div class="combo-thumbnails-container">
                                                 <div class="thumbnail-item active"
                                                     data-image="images/products/combo-default.jpg">
-                                                    <img src="images/products/combo-default.jpg" alt="Combo mặc định">
+                                                    <img src="images/products/combo-default.jpg" alt="Combo giường đen">
                                                 </div>
                                                 <div class="thumbnail-item"
                                                     data-image="images/products/combo-white.jpg">
@@ -1845,11 +1872,21 @@
                                                 </div>
                                                 <div class="thumbnail-item"
                                                     data-image="images/products/combo-beige.jpg">
-                                                    <img src="images/products/combo-beige.jpg" alt="Combo màu be">
+                                                    <img src="images/products/combo-beige.jpg" alt="Combo vân gỗ sồi">
+                                                </div>
+                                                <div class="thumbnail-item"
+                                                    data-image="images/products/combo-blackwhite.jpg">
+                                                    <img src="images/products/combo-blackwhite.jpg"
+                                                        alt="Combo giường đen trắng">
+                                                </div>
+                                                <div class="thumbnail-item"
+                                                    data-image="images/products/combo-walnut.jpg">
+                                                    <img src="images/products/combo-walnut.jpg"
+                                                        alt="Combo vân gỗ óc chó">
                                                 </div>
                                             </div>
-                                            <!-- <button class="slider-nav next"><i -->
-                                            <!-- class="fas fa-chevron-right"></i></button> -->
+                                            <button class="slider-nav next"><i
+                                                    class="fas fa-chevron-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -2083,7 +2120,7 @@
                                                 <div class="color-options">
                                                     <div class="color-thumb active"
                                                         data-img="images/products/bed-white.jpg">
-                                                        <img src="images/products/bed-white.jpg" alt="Màu trắng">
+                                                        <img src="images/products/bed-white.jpg" alt="Màu trắng đen">
                                                     </div>
                                                     <div class="color-thumb" data-img="images/products/bed-gray.jpg">
                                                         <img src="images/products/bed-gray.jpg" alt="Màu xám">
@@ -2097,6 +2134,9 @@
                                                     </div>
                                                     <div class="color-thumb" data-img="images/products/bed-black.jpg">
                                                         <img src="images/products/bed-black.jpg" alt="Vân gỗ sồi">
+                                                    </div>
+                                                    <div class="color-thumb" data-img="images/products/bed-white-2.jpg">
+                                                        <img src="images/products/bed-white-2.jpg" alt="Vân trắng">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2125,6 +2165,20 @@
                                                     <div class="color-thumb"
                                                         data-img="images/products/wardrobe-gray.jpg">
                                                         <img src="images/products/wardrobe-gray.jpg" alt="Màu Xám">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/wardrobe-white.jpg">
+                                                        <img src="images/products/wardrobe-white.jpg" alt="Màu Trắng">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/wardrobe-white-black.jpg">
+                                                        <img src="images/products/wardrobe-white-black.jpg"
+                                                            alt="Màu Trắng đen">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/wardrobe-gray-2.jpg">
+                                                        <img src="images/products/wardrobe-gray-2.jpg"
+                                                            alt="Màu vân Xám">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2155,6 +2209,19 @@
                                                         data-img="images/products/dressing-gold.jpg">
                                                         <img src="images/products/dressing-gold.jpg" alt="Vân gỗ sồi">
                                                     </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/dressing-grey black.jpg">
+                                                        <img src="images/products/dressing-grey black.jpg"
+                                                            alt="Màu đen xám">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/dressing-grey.jpg">
+                                                        <img src="images/products/dressing-grey.jpg" alt="Màu xám">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/dressing-white-1.jpg">
+                                                        <img src="images/products/dressing-white-1.jpg" alt="Màu trắng">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2175,7 +2242,7 @@
                                                     <div class="color-thumb active"
                                                         data-img="images/products/combo-default.jpg">
                                                         <img src="images/products/combo-default.jpg"
-                                                            alt="Combo đen trắng">
+                                                            alt="Combo giường đen">
                                                     </div>
                                                     <div class="color-thumb" data-img="images/products/combo-white.jpg">
                                                         <img src="images/products/combo-white.jpg" alt="Combo trắng">
@@ -2184,7 +2251,18 @@
                                                         <img src="images/products/combo-gray.jpg" alt="Combo xám">
                                                     </div>
                                                     <div class="color-thumb" data-img="images/products/combo-beige.jpg">
-                                                        <img src="images/products/combo-beige.jpg" alt="Combo xám">
+                                                        <img src="images/products/combo-beige.jpg"
+                                                            alt="Combo vân gỗ sồi">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/combo-walnut.jpg">
+                                                        <img src="images/products/combo-walnut.jpg"
+                                                            alt="Combo vân gỗ óc chó">
+                                                    </div>
+                                                    <div class="color-thumb"
+                                                        data-img="images/products/combo-blackwhite.jpg">
+                                                        <img src="images/products/combo-blackwhite.jpg"
+                                                            alt="Combo giường đen trắng">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2826,10 +2904,10 @@
                     <div class="col-lg-5 col-md-4">
                         <div class="social-icons d-flex align-items-center justify-content-end">
                             <ul class="list-inline">
-                                <li><a href="https://www.facebook.com/profile.php?id=61574171462457"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=61574171462457"><i
+                                            class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i
-                                            class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a>
                                 </li>
                             </ul>
@@ -2880,30 +2958,30 @@
 
     <script>
         // Toggle menu mobile
-        document.querySelector('.btn-show-menu-mobile').addEventListener('click', function() {
+        document.querySelector('.btn-show-menu-mobile').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('open');
         });
-        
+
         // Xử lý cuộn mượt và đóng menu
         document.querySelectorAll('.menu-mobile .mega-menu-link').forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                
-                if(targetId === '#') {
+
+                if (targetId === '#') {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 } else {
                     const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
+                    if (targetElement) {
                         targetElement.scrollIntoView({ behavior: 'smooth' });
                     }
                 }
-                
+
                 // Đóng menu mobile
                 document.getElementById('menu').classList.remove('open');
             });
         });
-        </script>
+    </script>
     <script>
         // Mở modal và hiển thị ảnh được click
         function openModal(imgSrc) {
@@ -2945,7 +3023,11 @@
                         this.classList.add('active');
                     });
                 });
-
+                if (mainImage) {
+                    mainImage.addEventListener('click', function () {
+                        openModal(this.src);
+                    });
+                }
                 // Xử lý nút prev/next
                 if (prevBtn && nextBtn) {
                     const scrollAmount = 120;
@@ -2969,14 +3051,40 @@
                 const prevBtn = container.querySelector('.slider-nav.prev');
                 const nextBtn = container.querySelector('.slider-nav.next');
                 const thumbnailItems = container.querySelectorAll('.thumbnail-item');
-                const mainImage = container.closest('.plastic-product-card').querySelector('.main-image') ||
-                    container.closest('.plastic-combo-card').querySelector('.combo-main-image');
+                const productCard = container.closest('.plastic-product-card');
+                const isWardrobe = productCard.querySelector('.product-category')?.textContent.includes('Tủ Quần Áo');
+
+                // Lấy các phần tử liên quan
+                let mainImages = [];
+                let mainNavPrev = null;
+                let mainNavNext = null;
+
+                if (isWardrobe) {
+                    mainImages = productCard.querySelectorAll('.product-thumbnail .main-image');
+                    mainNavPrev = productCard.querySelector('.product-thumbnail .slider-nav.prev');
+                    mainNavNext = productCard.querySelector('.product-thumbnail .slider-nav.next');
+                } else {
+                    const mainImage = productCard.querySelector('.main-image') ||
+                        productCard.querySelector('.combo-main-image');
+                    if (mainImage) mainImages = [mainImage];
+                }
 
                 // Xử lý click vào ảnh nhỏ
                 thumbnailItems.forEach(item => {
                     item.addEventListener('click', function () {
                         const imageUrl = this.getAttribute('data-image');
-                        mainImage.src = imageUrl;
+
+                        // Xử lý riêng cho tủ quần áo
+                        if (isWardrobe && mainImages.length >= 2) {
+                            const secondImageUrl = imageUrl.replace('.jpg', '-3.jpg');
+                            mainImages[0].src = imageUrl;
+                            mainImages[1].src = secondImageUrl;
+                            showMainImage(0); // Hiển thị ảnh đầu tiên
+                        }
+                        // Xử lý chung cho các sản phẩm khác
+                        else if (mainImages.length > 0) {
+                            mainImages[0].src = imageUrl;
+                        }
 
                         // Cập nhật active state
                         thumbnailItems.forEach(i => i.classList.remove('active'));
@@ -2984,18 +3092,55 @@
                     });
                 });
 
-                // Xử lý nút prev/next
+                // Xử lý nút prev/next cho thumbnail slider
                 if (prevBtn && nextBtn) {
                     const scrollAmount = 100;
-
                     prevBtn.addEventListener('click', () => {
                         thumbnailsContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
                     });
-
                     nextBtn.addEventListener('click', () => {
                         thumbnailsContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
                     });
                 }
+
+                // Xử lý nút prev/next cho ảnh chính (chỉ tủ quần áo)
+                if (isWardrobe && mainNavPrev && mainNavNext) {
+                    mainNavPrev.addEventListener('click', () => {
+                        const currentVisibleIndex = getCurrentVisibleImageIndex();
+                        const nextIndex = (currentVisibleIndex - 1 + mainImages.length) % mainImages.length;
+                        showMainImage(nextIndex);
+                    });
+
+                    mainNavNext.addEventListener('click', () => {
+                        const currentVisibleIndex = getCurrentVisibleImageIndex();
+                        const nextIndex = (currentVisibleIndex + 1) % mainImages.length;
+                        showMainImage(nextIndex);
+                    });
+                }
+
+                // Hàm hiển thị ảnh chính theo index
+                function showMainImage(index) {
+                    mainImages.forEach((img, i) => {
+                        img.style.display = i === index ? 'block' : 'none';
+                    });
+                }
+
+                // Hàm lấy index của ảnh đang hiển thị
+                function getCurrentVisibleImageIndex() {
+                    for (let i = 0; i < mainImages.length; i++) {
+                        if (mainImages[i].style.display !== 'none') {
+                            return i;
+                        }
+                    }
+                    return 0;
+                }
+
+                // Xử lý click vào ảnh lớn để mở modal
+                mainImages.forEach(img => {
+                    img.addEventListener('click', function () {
+                        openModal(this.src);
+                    });
+                });
             };
 
             // Khởi tạo slider cho tất cả sản phẩm
@@ -3003,188 +3148,9 @@
                 initThumbnailSlider(slider);
             });
         });
+
     </script>
-    <script>
-        // Danh sách sản phẩm với thông tin chi tiết
-        const productData = {
-            'giuong_nhua': {
-                name: 'Giường Nhựa GN-2025',
-                colors: {
-                    'images/products/bed-white.jpg': 'Trắng',
-                    'images/products/bed-gray.jpg': 'Xám',
-                    'images/products/bed-beige.jpg': 'Be'
-                }
-            },
-            'tu_quan_ao': {
-                name: 'Tủ Nhựa TN-2025',
-                colors: {
-                    'images/products/wardrobe-oak.jpg': 'Vân gỗ sồi',
-                    'images/products/wardrobe-walnut.jpg': 'Vân gỗ óc chó',
-                    'images/products/wardrobe-white.jpg': 'Trắng'
-                }
-            },
-            'ban_trang_diem': {
-                name: 'Bàn Trang Điểm BTD-2025',
-                colors: {
-                    'images/products/dressing-pink.jpg': 'Nâu',
-                    'images/products/dressing-white.jpg': 'Trắng',
-                    'images/products/dressing-gold.jpg': 'Vàng'
-                }
-            },
-            'combo_phong_ngu': {
-                name: 'Combo Phòng Ngủ 3 Món',
-                colors: {
-                    'images/products/combo-default.jpg': 'Den',
-                    'images/products/combo-white.jpg': 'Trắng',
-                    'images/products/combo-gray.jpg': 'Xám',
-                    'images/products/combo-beige.jpg': 'Vân gỗ sồi'
-                }
-            }
-        };
 
-        // Xử lý chọn màu sản phẩm
-        document.querySelectorAll('.color-thumb').forEach(thumb => {
-            thumb.addEventListener('click', function () {
-                // Lấy phần tử cha
-                const productCard = this.closest('.quick-product-card');
-                const productItem = this.closest('.quick-product-item');
-
-                // Xóa active của tất cả các thumb cùng nhóm
-                this.parentElement.querySelectorAll('.color-thumb').forEach(t => {
-                    t.classList.remove('active');
-                });
-
-                // Thêm active cho thumb được chọn
-                this.classList.add('active');
-
-                // Thay đổi ảnh chính
-                const mainImg = productCard.querySelector('.quick-product-img');
-                const newImgUrl = this.getAttribute('data-img');
-                mainImg.style.backgroundImage = `url('${newImgUrl}')`;
-
-                // Tự động chọn checkbox của sản phẩm
-                const checkbox = productItem.querySelector('input[type="checkbox"]');
-                checkbox.checked = true;
-            });
-        });
-
-        // Xử lý submit form
-        document.querySelector('.quick-order-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Lấy thông tin sản phẩm đã chọn
-            const selectedProducts = Array.from(this.querySelectorAll('input[name="quick-product"]:checked'))
-                .map(input => {
-                    const productId = input.value;
-                    const productItem = input.closest('.quick-product-item');
-                    const selectedColor = productItem.querySelector('.color-thumb.active');
-                    const colorImage = selectedColor ? selectedColor.getAttribute('data-img') : '';
-
-                    return {
-                        id: productId,
-                        name: productData[productId].name,
-                        color: productData[productId].colors[colorImage] || 'Mặc định',
-                        colorImage: colorImage
-                    };
-                });
-
-            // Kiểm tra nếu chưa chọn sản phẩm nào
-            if (selectedProducts.length === 0) {
-                alert('Vui lòng chọn ít nhất một sản phẩm');
-                return;
-            }
-
-            const formData = {
-                name: this.querySelector('#quick-fullname').value,
-                phone: this.querySelector('#quick-phone').value,
-                email: this.querySelector('#quick-email').value,
-                address: this.querySelector('#quick-address').value,
-                products: selectedProducts.map(p => `${p.name} - Màu: ${p.color}`).join('\n'),
-                // productsDetail: JSON.stringify(selectedProducts), // Gửi cả dữ liệu chi tiết
-                note: this.querySelector('#quick-note').value
-            };
-
-            // Hiệu ứng loading
-            const submitBtn = this.querySelector('.quick-submit-btn');
-            submitBtn.innerHTML = '<span class="quick-loading"></span> ĐANG XỬ LÝ...';
-            submitBtn.disabled = true;
-
-            fetch('https://script.google.com/macros/s/AKfycbxryedzk7ZiAsWl045jD1zlDatSMwJqAh0fXf0ai7NHZW4EplAREpdjDv_UzVsyuwbO/exec', {
-                method: 'POST',
-                mode: 'no-cors',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-
-                .then(() => {
-                    // Hiển thị popup thành công
-                    showSuccessPopup(selectedProducts);
-
-                    this.reset();
-
-                    // Reset tất cả checkbox và màu sắc
-                    document.querySelectorAll('input[name="quick-product"]').forEach(checkbox => {
-                        checkbox.checked = false;
-                    });
-                    document.querySelectorAll('.color-thumb').forEach(thumb => {
-                        thumb.classList.remove('active');
-                    });
-                    // Set lại màu mặc định
-                    document.querySelectorAll('.color-thumb:first-child').forEach(thumb => {
-                        thumb.classList.add('active');
-                    });
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Có lỗi xảy ra, vui lòng thử lại sau.');
-                })
-                .finally(() => {
-                    submitBtn.innerHTML = '<span>HOÀN TẤT ĐẶT HÀNG</span>';
-                    submitBtn.disabled = false;
-                });
-        });
-
-        // Hiển thị popup thành công với thông tin đơn hàng
-        function showSuccessPopup(products) {
-            const popup = document.querySelector('.quick-order-popup');
-            const content = popup.querySelector('.quick-popup-content');
-            // const productList = popup.querySelector('.quick-popup-products');
-
-            // // Hiển thị danh sách sản phẩm đã đặt
-            // productList.innerHTML = products.map(p => 
-            //     `<div class="popup-product-item">
-            //         <img src="${p.colorImage}" alt="${p.name}">
-            //         <div>
-            //             <h4>${p.name}</h4>
-            //             <p>Màu: ${p.color}</p>
-            //         </div>
-            //     </div>`
-            // ).join('');
-
-            popup.style.display = 'flex';
-            setTimeout(() => {
-                popup.style.opacity = '1';
-                content.style.transform = 'translateY(0)';
-                content.style.opacity = '1';
-            }, 10);
-        }
-
-        // Đóng popup
-        document.querySelector('.quick-popup-close').addEventListener('click', function () {
-            const popup = document.querySelector('.quick-order-popup');
-            const content = popup.querySelector('.quick-popup-content');
-
-            popup.style.opacity = '0';
-            content.style.transform = 'translateY(20px)';
-            content.style.opacity = '0';
-
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 300);
-        });
-    </script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-migrate-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
