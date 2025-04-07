@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://perfectdecor.online/sitemap.xml
+Sitemap: https://www.perfectdecor.online/sitemap.xml
