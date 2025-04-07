@@ -1,0 +1,31 @@
+# 1. Cấu hình build & deploy
+[build]
+  command = "echo 'No build needed for static site'"
+  publish = "."
+
+# 2. Redirects (chuyển hướng)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# 3. Headers (bảo mật & SEO)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Link = "<https://perfectdecor.online/>; rel=\"canonical\""
+    # Bảo mật
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Cache & hiệu suất
+    Cache-Control = "public, max-age=3600"
+
+# 4. Plugin tự động tạo sitemap (tùy chọn)
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+    changeFreq = "weekly"
+    priority = 1.0
+    exclude = ["/404.html"]
